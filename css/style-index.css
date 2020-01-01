@@ -1,0 +1,826 @@
+/*--- style wrapper--- */
+#wrapper {
+	overflow: hidden;
+	position: relative;
+	left: 0px;
+	transition: left 0.5s;
+}
+/*--- style header ---*/
+#header {
+	border-bottom: 1px solid #3498db;
+}
+/*wp-inner*/
+.wp-inner {
+	position: relative;
+}
+/*infor-person*/
+#header .infor-person {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    display: none;
+    width: 144px;
+}
+#header .infor-person a.avatar {
+	width: 50px;
+	height: 50px;
+	border: 1px solid #3498db;
+	border-radius: 100%;
+	overflow: hidden;
+}
+#header .infor-person a.avatar img {
+	width: 100%;
+	height: auto;
+}
+#header .infor-person p.first-name-admin {
+	color: #3498db;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    padding: 11px 35px 0px 10px;
+    text-decoration: underline;
+}
+/*icon*/ 
+a#logo {
+    width: 136px;
+    height: 62px;
+    overflow: hidden;
+    margin-right: 45px;
+}
+a#logo img {
+	width: 100%;
+	height: 100%;
+	color: #3498db;
+}
+/*main-menu*/
+ul#main-menu li {
+	float: left;
+}
+ul#main-menu li a {
+	font-family: 'Cabin';
+	font-size: 20px;
+	line-height: 22px;
+	color: #fff;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding: 20px 30px;
+	color: #3498db;
+}
+ul#main-menu li a:hover span {
+	border-bottom: 1px solid #3498db;
+}
+
+/*form search*/
+#form-search {
+	position: relative;
+	padding: 16px 0px;
+}
+#form-search #search-text {
+	width: 170px;
+    padding: 5px 30px 5px 10px;
+    font-style: italic;
+    font-size: 15px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    color: #95a5a6;
+}
+#form-search #btn-search {
+	border: none;
+    background: none;
+    position: absolute;
+    top: 26%;
+    right: 0%;
+    color: #95a5a6;
+    font-size: 14px;
+    padding: 6px 12px;
+}
+#header .icon-search {
+	position: absolute;
+    top: 29%;
+    right: 5%;
+    color: #3498db;
+    font-size: 20px;
+    display: none;
+}
+/*basket*/
+
+/*--- end style header ---*/
+/*--- style wp-content ---*/
+#wp-content {
+	margin-top: 30px;
+}
+/*--- style sidebar ---*/
+#sidebar {
+	width: 23%;
+	min-height: 650px;
+	padding: 10px 10px;
+}
+.infor-shop a.avatar {
+	width: 150px;
+	height: 150px;
+	border: 1px solid #fff;
+	border-radius: 100%;
+	overflow: hidden;
+	margin: 0px auto;
+	margin-bottom: 20px;
+}
+.infor-shop a.avatar img {
+	width: 100%;
+	height: auto;
+}
+.infor-shop p.slogan {
+	font-family: "Indie Flower";
+	font-size: 40px;
+	line-height: 25px;
+	font-weight: 500;
+	text-align: center;
+}
+/*list-Utilities*/
+.list-Utilities {
+    padding: 0px 30px 0px 30px;
+    margin-top: 20px;
+}
+.list-Utilities a {
+	color: #7f8c8d;
+	float: left;
+	font-size: 20px;
+	margin: 0px 5px;
+	padding: 8px 8px;
+}
+.list-Utilities a:hover {
+	color: #3498db;
+}
+/*widget product*/
+.widget.product {
+	margin-top: 40px;
+}
+.widget.product .widget-title {
+	margin-bottom: 20px;
+}
+.widget.product .widget-title h2 {
+	font-family: "Satisfy";
+	font-size: 40px;
+	line-height: 30px;
+	text-align: center;
+	color: #7f8c8d;
+}
+#sidebar .widget.product .widget-content {
+	margin-left: 65px;
+}
+.widget.product .widget-content ul.list-name-product li {
+	position: relative;
+}
+.widget.product .widget-content ul.list-name-product li:after {
+	font-family: "FontAwesome";
+    content: "\f004";
+    position: absolute;
+    top: 25%;
+    left: 0%;
+    color: #95a5a6;
+    font-size: 10px;
+}
+.widget.product .widget-content ul.list-name-product li a {
+	font-family: "Handlee";
+	font-size: 15px;
+	color: #95a5a6;
+	padding: 8px 0px;
+	margin-left: 20px;
+}
+.widget.product .widget-content ul.list-name-product li:hover a {
+	color: #3498db;
+}
+/*--- end style sidebar ---*/
+/*--- style content ---*/
+#content {
+	width: 77%;
+	min-height: 650px;
+	padding: 10px 0px 0px 10px;
+}
+/*banner*/
+.slide-box {
+    width: 100%;
+    height: 344px;
+    margin: 0px auto;
+    position: relative;
+    overflow :hidden;
+}
+.list-slide {
+    width: 100%;
+    height: 381px;
+    overflow: hidden;
+}
+.list-slide .slide img {
+    width: 100%;
+    height: auto;
+}
+.slide {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+}
+.slide.active {
+    opacity: 1;
+    visibility: visible;
+}
+.btn-slide span {
+    color: #fff;
+    font-size: 40px;
+    opacity: 0.6;
+}
+.btn-slide span.btn-prev-banner {
+    position: absolute;
+    left: 2%;
+    top: 40%;
+    cursor: pointer;
+    z-index: 3;
+}
+.btn-slide span.btn-next-banner {
+    position: absolute;
+    right: 2%;
+    top: 40%;
+    cursor: pointer;
+    z-index: 3;
+}
+.btn-slide ul {
+    position: absolute;
+    z-index: 3;
+    width: 100px;
+    bottom: 20%;
+    left: 50%;
+    margin: -50px;
+    display:flex;
+    justify-content: space-evenly;
+}
+.btn-slide ul li {
+    background: #fff;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: all 0.5;
+    cursor: pointer;
+    opacity: 0.3;
+}
+.btn-slide ul li.active-li {
+    opacity: 1;
+}
+/* left  */
+.lost-on-left {
+    animation: lost-on-left 1s forwards;
+}
+/* nhiệm vụ @-webkit-keyframes: điều kiển diễn biến hoạt động của một thành phần */
+@-webkit-keyframes lost-on-left {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+.go-to-left {
+    animation: go-to-left 1s forwards;
+}
+@-webkit-keyframes go-to-left {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+/* right  */
+.lost-on-right {
+    animation: lost-on-right 1s forwards;
+}
+@-webkit-keyframes lost-on-right {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+.go-to-right {
+    animation: go-to-right 1s forwards;
+}
+@-webkit-keyframes go-to-right {
+    from {
+        transform : translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+/*widget-category*/
+.widget.category .widget-head {
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+.widget.category .widget-head h2 {
+	font-family: "Satisfy";
+	font-size: 60px;
+	line-height: 30px;
+	text-align: center;
+	color: #636e72;
+}
+.widget.category .widget-content {
+	border-top: 1px solid #95a5a6;
+    border-bottom: 1px solid #95a5a6;
+}
+.widget.category .widget-content ul.list-cate {
+	padding: 10px 0px;
+    padding-left: 309px;
+    padding-right: 277px;
+}
+.widget.category .widget-content ul.list-cate li {
+	float: left;
+	border-right: 1px solid #b2bec3;
+}
+.widget.category .widget-content ul.list-cate li:last-child {
+	border-right: none;
+}
+.widget.category .widget-content ul.list-cate li a {
+	padding: 10px 19px;
+	color:#7f8c8d;
+	font-size: 15px;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+.widget.category .widget-content ul.list-cate li a:hover {
+	color: #3498db;
+}
+/*all product*/
+/*widget-product*/
+#content .widget.product .widget-head {
+    margin-top: 10px;
+    padding: 0px 256px;
+}
+#content .widget.product .widget-head h2 {
+	font-family: "Dancing Script";
+	color: #7f8c8d;
+	font-size: 30px;
+	line-height: 35px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+#content .widget.product .widget-head span.line {
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	position: relative;
+	color: #b2bec3;
+}
+#content .widget.product .widget-head span.line .line-left {
+	border: 1px solid #b2bec3;
+    width: 160px;
+    top: 8px;
+    left: 0%;
+    position: absolute;
+}
+#content .widget.product .widget-head span.line .line-right {
+	border: 1px solid #b2bec3;
+    width: 160px;
+    top: 8px;
+    right: 0%;
+    position: absolute;
+}
+#content .widget.product .widget-content {
+	height: 390px;
+	overflow: hidden;
+	border-bottom: 1px solid #cecece;
+}
+ul.list-product {
+	margin-left: 5px;
+}
+ul.list-product li {
+	margin-top: 10px;
+    float: left;
+    width: 200px;
+    height: 355px;
+    overflow: hidden;
+    margin-right: 26px;
+    position: relative;
+}
+ul.list-product li span.discount {
+	position: absolute;
+    top: 6%;
+    left: 5%;
+    font-size: 12px;
+    color: #f5f5f5;
+    font-weight: bold;
+}
+ul.list-product li span.add-basket {
+	font-size: 30px;
+    color: #0097e6;
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    opacity: 0.6;
+    display: none;
+    cursor: pointer;
+}
+ul.list-product li:hover {
+	box-shadow: 0 0 6px rgba(0,0,0,0.5);
+	transition: all 0.25s;
+}
+ul.list-product li:nth-child(4) {
+	margin-right: 0px;
+}
+ul.list-product li:nth-child(5),
+ul.list-product li:nth-child(6) {
+	display: none;
+}
+ul.list-product li a {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+	top: 0px;
+	transition: top 0.5s;
+}
+ul.list-product li a img {
+	width: 100%;
+	height: auto;
+}
+ul.list-product li .hide-1 {
+	/*display: none;*/
+}
+ul.list-product li .hide-1 p.new-price {
+	font-family: "Satisfy";
+	color: #000;
+	text-align: center;
+	line-height: 30px;
+	font-size: 15px;
+}
+ul.list-product li .hide-1 p.old-price {
+	font-family: "Satisfy";
+	font-style: italic;
+	font-size: 20px;
+	text-decoration: line-through;
+	text-align: center;
+}
+/*infor product*/
+ul.list-product li .more-product {
+    width: 100%;
+    height: 60px;
+    position: relative;
+    bottom: 17%;
+    overflow: hidden;
+}
+ul.list-product li.open-list-thumb a {
+	top: -65px;
+	transition: top 0.5s;
+}
+ul.list-product li .more-product.open-list-thumb .hide-2{
+	top: 0px;
+	transition: top 0.5s;
+}
+ul.list-product li .more-product .hide-2 {
+    position: absolute;
+    z-index: 1000;
+    top: 90px;
+}
+.more-product .hide-2 ul.list-thumb {
+	margin-top: 5px;
+}
+.more-product .hide-2 ul.list-thumb li {
+    width: 20% !important;
+    height: 50px;
+    overflow: hidden;
+    margin-right: 5%;
+    margin-top: 0px;
+}
+.more-product .hide-2 ul.list-thumb li:hover {
+    box-shadow: 0 0 6px rgb(209, 31, 53);
+    transition: all 0.25s;
+}
+.more-product .hide-2 ul.list-thumb.one-img li:first-child {
+	margin-left: 39%;
+}
+.more-product .hide-2 ul.list-thumb.two-img li {
+	margin-right: 21px;
+}
+.more-product .hide-2 ul.list-thumb.two-img li:first-child {
+	margin-left: 25%;
+}
+.more-product .hide-2 ul.list-thumb.three-img li {
+	margin-right: 14px;
+}
+.more-product .hide-2 ul.list-thumb.three-img li:first-child {
+	margin-left: 13%;
+}
+.more-product .hide-2 ul.list-thumb li:first-child {
+	margin-left: 2%;
+}
+.more-product .hide-2 ul.list-thumb li:last-child {
+	margin-right: 2%;
+}
+.more-product .hide-2 ul.list-thumb li img {
+	width: 100%;
+	height: auto;
+}
+/*btn add basket*/
+/*add to cart*/
+/*handle hide and show product*/
+.hide-1 {
+	height: 55px;
+    width: 100%;
+    position: absolute;
+    z-index: 100000;
+    bottom: 0%;
+}
+/*--------------------*/
+/*--- end style content ---*/
+/*--- end style wp-content ---*/
+/*--- end style wrapper ---*/
+/*--- style footer ---*/
+#footer {
+	width: 100%;
+	background: #3498db;
+	padding: 30px 0px;
+}
+
+#footer .about-us {
+	width: 270px;
+	padding-right: 20px;
+}
+#footer h2 {
+	font-size: 25px;
+	color: #fff;
+	line-height: 25px;
+	margin-bottom: 20px;
+}
+#footer .about-us span {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 15px;
+	line-height: 25px;
+	font-weight: 400;
+}
+#footer .about-us p {
+	color: #fff;
+	font-size: 15px;
+	line-height: 15px;
+	margin-bottom: 30px;
+}
+/*contact*/
+#footer .contact {
+	width: 350px;
+}
+#footer .contact ul.list-contact li {
+	margin-bottom: 8px;
+}
+#footer .contact ul.list-contact li i{
+	display: inline-block;
+	color: #fff;
+	margin-right: 5px;
+}
+#footer .contact ul.list-contact li span {
+	color: #fff;
+	font-size: 15px;
+	line-height: 22px;
+}
+#footer .information {
+	width: 350px;
+}
+#footer .information p {
+	color: #fff;
+	margin-bottom: 8px;
+	line-height: 25px;
+	font-size: 15px;
+}
+#footer .information p span.highlight {
+	font-weight: 500;
+    cursor: pointer;
+    text-decoration: underline;}
+#footer .sign-up-member {
+	width: 200px;
+	display: inline-block;
+}
+#footer .sign-up-member .form-sign-up {
+	margin: 0px auto;
+}
+/*sign up member*/
+#footer .sign-up-member input {
+	margin-bottom: 10px;
+	border: 1px solid #e1e1e1;
+	border-radius: 10px;
+	padding: 5px 20px 5px 10px;
+	color: #34495e;
+	font-style: italic;
+}
+#footer .sign-up-member .btn-sign-up {
+	background: #2980b9;
+	border: 1px solid #2980b9;
+	border-radius: 20px;
+	color: #fff;
+	font-size: 17px;
+	font-weight: bold;
+	display: block;
+	margin: 0px auto;
+}
+/*style copyright*/
+#copy-right {
+	width: 100%;
+	background: #fff;
+}
+#copy-right p {
+	padding: 10px 0px;
+	text-align: center;
+	font-size: 17px;
+	line-height: 25px;
+	font-style: italic;
+}
+.product-new {
+	margin: 65px 0px 78px 0px;
+}
+/*--- end style footer ---*/
+/*--- style respon ---*/
+/*infor-person*/
+#site {
+	overflow: hidden;
+}
+#site.tab-open-respon #wrapper {
+	position: relative;
+	right: 250px;
+	overflow: hidden;
+}
+#wp-respon #respon-right{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background: #95a5a6;
+	min-height: 350px;
+	width: 250px;
+}
+/*respon right*/
+#header #respon-right {
+    width: 100%;
+    min-height: 221px;
+    position: absolute;
+    right: 0%;
+    top: 100%;
+    z-index: 4;
+    padding: 0px 50px;   
+}
+#header #respon-right .pt {
+	background: #3498db;
+	position: relative;
+}
+/*inforperson*/
+#header #respon-right .infor-person-respon {
+	display:block;
+	width: 100%;
+	margin: 0px auto;
+	width: 100%;
+	text-align: center;
+	padding: 0px 0px 0px 0px;
+	margin-bottom: 40px;
+	background: #2980b9;
+	opacity: 0.5;
+}
+#header #respon-right .infor-person-respon a.avatar {
+	width: 60px;
+	height: 60px;
+	border: 1px solid #3498db;
+	border-radius: 100%;
+	overflow: hidden;
+	margin: 0px auto;
+}
+#header #respon-right .infor-person-respon a.avatar img {
+	width: 100%;
+	height: auto;
+}
+#header #respon-right .infor-person-respon p.name-admin {
+	font-family: "Dancing Script";
+	font-size: 20px;
+	color: #f5f5f5;
+}
+/*menu respon*/
+#header #respon-right ul#menu-respon {
+	margin-bottom: 50px;
+	display: none;
+}
+#header #respon-right ul#menu-respon li {
+	position: relative;
+}
+#header #respon-right ul#menu-respon li:hover {
+	padding: 0px 100px;
+	transition: all 0.5s;
+}
+#header #respon-right ul#menu-respon li:hover i{
+	font-weight: bold;
+	color: #ff6b81;
+	opacity: 0.6;
+}
+#header #respon-right ul#menu-respon li:first-child {
+	border: none;
+}
+#header #respon-right ul#menu-respon li i {
+    color: #f5f5f5;
+    font-size: 20px;
+    position: absolute;
+    top: 25%;
+    right: 64%;
+}
+#header #respon-right ul#menu-respon li a {
+	font-family: "Roboto";
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 300;
+	padding: 10px 0px;
+	text-align: center;
+	border-bottom: 1px solid #f5f5f5;
+	transition: all 0.5s;
+}
+#header span#icon-menu {
+	color: #f5f5f5;
+    font-size: 30px;
+    position: absolute;
+	top: 55%;
+    left: 47%;
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+#header span#icon-menu.move {
+	left: 47%;
+	top: 82%;
+	transition: all 0.5s;
+}
+#header span#icon-respon-menu {
+    font-size: 25px;
+    color: #3498db;
+    position: absolute;
+    top: 25%;
+    right: 3%;
+    display: none;
+}
+/*widget.category-respon*/
+#header #respon-right .widget.category-respon {
+	background: #2980b9;
+	opacity: 0.5;
+}
+#header #respon-right .widget.category-respon ul.list-cate {
+	width: 363px;
+    margin: 20px auto;
+}
+#header #respon-right .widget.category-respon ul.list-cate li {
+	float: left;
+	border-right: 1px solid #fff;
+
+}
+#header #respon-right .widget.category-respon ul.list-cate li:last-child {
+	border: none;
+}
+#header #respon-right .widget.category-respon ul.list-cate li a {
+	font-family: "Roboto";
+	color: #f5f5f5;
+	padding: 10px 30px;
+	font-weight: 300px;
+	text-transform: uppercase;
+}
+#header #respon-right .widget.category-respon ul.list-cate li:hover > a {
+	text-decoration: underline;
+}
+/*respon left*/
+#wp-respon #respon-left {
+	width: 270px;
+    background: #ecf0f1;
+    min-height: 1000px;
+    padding: 10px 10px;
+    position: absolute;
+    top: 63px;
+    left: -270px;
+    transition: left 0.5s;
+    z-index: 1;
+}
+#wp-respon #respon-left .widget.product .widget-content {
+	margin-left: 65px;
+}
+#wp-respon #respon-left span#icon-tabbar {
+    position: absolute;
+    top: 0%;
+    right: -24%;
+    font-size: 30px;
+    color: #636e72;
+    display: none;
+    opacity: 0.3;
+    cursor: pointer;
+}
+/*--- end style respon ---*/
+/*open respon left*/
+/*#site.open-respon-left #wrapper {
+	left: 270px;
+	transition: left 0.5s;
+}*/
+#site.open-respon-left #content {
+	opacity: 0.6;
+}
+#site.open-respon-left #wp-respon #respon-left {
+	left: 0px;
+	transition: left 0.5s;
+}
